@@ -102,7 +102,7 @@ app.get('/produtos', (req, res) => {
 
 //---------------------ATUALIZAR ROTA---(PUT)-----------------------//
 app.put('/produtos/:NomeDoProduto', (req, res) => {
-    const nomeProdutoAtualizado = req.params.nomeProdutoAtualizado;
+    const nomeProdutoAtualizado = req.params.NomeDoProduto;
     const novoNomeProduto = req.body.nomeProduto;
     const novoPrecoProduto = req.body.precoProduto;
 
