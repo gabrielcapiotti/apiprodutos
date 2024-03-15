@@ -89,9 +89,6 @@ app.get('/produtos', (req, res) => {
 });
 
 
-
-
-
 /*
 app.get('/produtos', (req, res) => {
     if (listaProdutos.length === 0) {
@@ -103,11 +100,8 @@ app.get('/produtos', (req, res) => {
 */
 
 
-
-
-
 //---------------------ATUALIZAR ROTA---(PUT)-----------------------//
-app.put('/produtos/NomeDoProduto', (req, res) => {
+app.put('/produtos/:NomeDoProduto', (req, res) => {
     const nomeProdutoAtualizado = req.params.nomeProdutoAtualizado;
     const novoNomeProduto = req.body.nomeProduto;
     const novoPrecoProduto = req.body.precoProduto;
@@ -132,8 +126,6 @@ app.put('/produtos/NomeDoProduto', (req, res) => {
 });
 
 
-
-
 /*
 app.put('/produtos/:nomeProduto', (req, res) => {
     const nomeAtual = req.params.nomeProduto;
@@ -148,9 +140,6 @@ app.put('/produtos/:nomeProduto', (req, res) => {
     }
 });
 */
-
-
-
 
 
 //--------------------DELETAR ROTA---(DELETE)--------------------------//
